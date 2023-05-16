@@ -1,0 +1,20 @@
+输入：test.txt的文本内容
+输出：
+
+加密后的文本(字节串制):
+b't\'\xb1\xee\xf6\x12\xab~"\xa4\x8b\x16\xb5[&\x9c\xa6\x05\xe0>\xc9\x80\xcf\xc7\x9c\x98-|\x9d\xb0\x88\n}\x03\xb4\xbb\xb6\xea\x1e!\xba\xbb\xa3\n\x12\x1f\xa2/3\x01cM\x92\x94\xad\xc8Z[\xfd\x9eB9\x80M\xb2H\x92-vy\xeez\xae\xc2\x12WoT=2\x06<\x13\xb1?\xd0q\x9ck\xc2\xfb\xfat\xb2\x16\xfd\tM\x02\x0fa\x90\x11\xa7\r\x18\xda\xbei\xba`\x1a\x8c\x1cEa\xb1\xd6\xabhZ(\x03\xc6\xd6V&rqP\x92\x82q`y\x06\xbb\xf7\xfd]\xd4X\x974\xa2b\x8cy\x81\x18\x18 \xf8\xcacz\xa0|\xe0\x99\xa9H!\xab\xa4\x81\xe34\xd0\x97H\x9e7\xc1YV\x96\xfeu\x1a\x0f\xd5\x0b\xf8-L`\xbb.\x9c"E#\xc0\xbcs\x95i\xd8\x8a\xf6y\xc7"N\xa0\x1bf\x95\xa1B\xda6[\xf3z\xde\xd08w\xe5\x88\xf8k\x97%\x1e!\xebN\xda\xc5\x16h\xab\xd0\xa3T\xf9\xfe\xc4S\xff\xe8\x83\xad\xa1\xdd\x19\x8e\xa5\x9361\xfaC\x80&\xfcD\x19td\rV(\x88f\xa2\x18\x8aR/w\x82e\x01\xfb4\xdc\x10\xc7$zF\xb0\x8c\x9b'
+
+加密后的文本(十六进制):
+7427b1eef612ab7e22a48b16b55b269ca605e03ec980cfc79c982d7c9db0880a7d03b4bbb6ea1e21babba30a121fa22f3301634d9294adc85a5bfd9e4239804db248922d7679ee7aaec212576f543d32063c13b13fd0719c6bc2fbfa74b216fd094d020f619011a70d18dabe69ba601a8c1c4561b1d6ab685a2803c6d65626727150928271607906bbf7fd5dd4589734a2628c7981181820f8ca637aa07ce099a94821aba481e334d097489e37c1595696fe751a0fd50bf82d4c60bb2e9c224523c0bc739569d88af679c7224ea01b6695a142da365bf37aded03877e588f86b97251e21eb4edac51668abd0a354f9fec453ffe883ada1dd198ea5933631fa438026fc441974640d56288866a2188a522f77826501fb34dc10c7247a46b08c9b
+
+明文的HMAC值(内置库):
+d8e5b2c55da4d2c086b1c1e2275bc0d73b92dffbeb496fde62065f3262ad3a17
+明文的HMAC值(自行编写):
+D8E5B2C55DA4D2C086B1C1E2275BC0D73B92DFFBEB496FDE62065F3262AD3A17
+
+True 明文为:
+202001 李四 男 1班 高数:89 英语:28 计算机:77
+202002 张三 男 1班 高数:52 英语:60 计算机:80
+202003 王五 男 1班 高数:62 英语:70 计算机:87
+202004 张1 男 1班 高数:75 英语:80 计算机:86
+202005 张43 男 1班 高数:74 英语:63 计算机:98
