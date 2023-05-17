@@ -3,12 +3,13 @@ Author       : dpm12345 1006975692@qq.com
 Github       : https://github.com/dpm12345
 Date         : 2023-04-27 14:25:45
 LastEditors  : dpm12345 1006975692@qq.com
-LastEditTime : 2023-05-06 17:47:14
+LastEditTime : 2023-05-17 17:49:54
 Description  : 
 '''
 import gmpy2
 import sha1
 import DES
+from math import ceil
 
 default_ecc_table = {
     'p': 'FFFFFFFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000FFFFFFFFFFFFFFFF',
@@ -53,7 +54,7 @@ class ANSIX917:
             V2 = self.__EDE(bytes.fromhex(hex2))
             self.V = V2
             res += R
-        return int(res[0:size//8].hex(), 16) >> max(0, size-size//8*8)
+        return int(res[0:ceil(size/8)].hex(), 16) >> (ceil(size/8)*8 - size)
 
 
 ansix917 = ANSIX917(b"Test1111", b"Test2222", b"12345678")
